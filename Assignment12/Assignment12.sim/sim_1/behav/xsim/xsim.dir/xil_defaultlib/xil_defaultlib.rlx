@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_counter.v,1706784221,verilog,,,,tb_counter,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_counter_load.v,1706807150,verilog,,,,tb_counter_load,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_down_counter.v,1706784733,verilog,,,,tb_down_counter,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sources_1/new/counter_load.v,1706807400,verilog,,/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_counter_load.v,,counter_load,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sources_1/new/down_counter.v,1706776886,verilog,,/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_down_counter.v,,down_counter,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sources_1/new/mode_sel_counter.v,1706776907,verilog,,/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_counter.v,,mod_sel_counter,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sources_1/new/up_counter.v,1706776862,verilog,,/home/ramdas/Vidyaleap/Assignment12/Assignment12.srcs/sim_1/new/tb_counter.v,,up_counter,,,,,,,,

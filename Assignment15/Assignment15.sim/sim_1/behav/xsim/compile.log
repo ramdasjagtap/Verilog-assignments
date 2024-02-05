@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/practice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module practice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_practice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_practice

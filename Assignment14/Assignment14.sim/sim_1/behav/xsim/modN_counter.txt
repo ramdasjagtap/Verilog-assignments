@@ -1,0 +1,20 @@
+tb_rst - 1 | tb_count -  x
+tb_rst - 0 | tb_count -  0
+tb_rst - 0 | tb_count -  1
+tb_rst - 0 | tb_count -  2
+tb_rst - 0 | tb_count -  3
+tb_rst - 0 | tb_count -  4
+tb_rst - 0 | tb_count -  5
+tb_rst - 0 | tb_count -  6
+tb_rst - 0 | tb_count -  7
+tb_rst - 0 | tb_count -  8
+tb_rst - 0 | tb_count -  9
+tb_rst - 0 | tb_count - 10
+tb_rst - 0 | tb_count -  0
+tb_rst - 0 | tb_count -  1
+tb_rst - 0 | tb_count -  2
+tb_rst - 0 | tb_count -  3
+tb_rst - 0 | tb_count -  4
+tb_rst - 0 | tb_count -  5
+tb_rst - 1 | tb_count -  6
+Simulation over!

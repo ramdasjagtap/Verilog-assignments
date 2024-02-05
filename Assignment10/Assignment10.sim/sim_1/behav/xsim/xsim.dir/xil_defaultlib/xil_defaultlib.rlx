@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sim_1/new/tb_SISO.v,1706697610,verilog,,,,tb_SISO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sim_1/new/tb_SISO_param.v,1706695595,verilog,,,,tb_SISO_param,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sources_1/new/SISO.v,1706696565,verilog,,/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sim_1/new/tb_SISO.v,,SISO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sources_1/new/SISO_d.v,1706608526,verilog,,/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sources_1/new/d_ff.v,,SISO_d,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sources_1/new/SISO_op.v,1706698293,verilog,,/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sim_1/new/tb_SISO.v,,SISO_op,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sources_1/new/SISO_param.v,1706637352,verilog,,/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sim_1/new/tb_SISO_param.v,,SISO_param,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sources_1/new/d_ff.v,1706608375,verilog,,/home/ramdas/Vidyaleap/Assignment10/Assignment10.srcs/sim_1/new/tb_SISO.v,,d_ff,,,,,,,,

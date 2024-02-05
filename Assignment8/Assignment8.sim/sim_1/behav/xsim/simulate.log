@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Time -                    0, tb_rst - 1, tb_t- 0 
+Time -                   20, tb_rst - 0, tb_t- 0 
+Time -                   50, tb_rst - 0, tb_t- 1 
+Time -                  100, tb_rst - 0, tb_t- 0 
+Time -                  180, tb_rst - 0, tb_t- 1 
+Time -                  200, tb_rst - 0, tb_t- 0 
+Time -                  220, tb_rst - 0, tb_t- 1 
+Time -                  320, tb_rst - 0, tb_t- 0 
+$finish called at time : 400 ns : File "/home/ramdas/Vidyaleap/Assignment8/Assignment8.srcs/sim_1/new/tb_t_ff.v" Line 44

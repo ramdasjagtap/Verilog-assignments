@@ -1,0 +1,9 @@
+tb_rst- 1 | tb_mode- 0 | tb_count_val- 0 | tb_count = x
+tb_rst- 0 | tb_mode- 0 | tb_count_val- 0 | tb_count = 0
+tb_rst- 0 | tb_mode- 1 | tb_count_val- 0 | tb_count = 0
+tb_rst- 0 | tb_mode- 1 | tb_count_val- 7 | tb_count = 0
+tb_rst- 0 | tb_mode- 1 | tb_count_val- 7 | tb_count = 6
+tb_rst- 0 | tb_mode- 0 | tb_count_val- 7 | tb_count = 6
+tb_rst- 0 | tb_mode- 0 | tb_count_val- 7 | tb_count = 8
+tb_rst- 0 | tb_mode- 0 | tb_count_val- 5 | tb_count = 8
+tb_rst- 0 | tb_mode- 0 | tb_count_val- 5 | tb_count = 6

@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_counter2.v,1707112368,verilog,,,,tb_counter2,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_practice.v,1707127365,verilog,,,,tb_practice,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_timer.v,1706893179,verilog,,,,tb_timer,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_timer_gen.v,1707064761,verilog,,,,tb_timer_gen,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_top_module.v,1707121532,verilog,,,,tb_top_module,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/counter.v,1707113497,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/counter2.v,,counter,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/counter2.v,1707114582,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/d_ff.v,,counter2,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/d_ff.v,1707112088,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/timer_gen.v,,d_ff,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/practice.v,1707127160,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_practice.v,,practice,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/timer.v,1706893105,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_timer.v,,timer,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/timer_gen.v,1707125421,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/timer_gen2.v,,timer_gen,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/timer_gen2.v,1707121942,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/top_module_timer.v,,timer_gen2,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/top_module.v,1707113997,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_top_module.v,,top_module,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sources_1/new/top_module_timer.v,1707121429,verilog,,/home/ramdas/Vidyaleap/Assignment15/Assignment15.srcs/sim_1/new/tb_top_module.v,,top_module_timer,,,,,,,,

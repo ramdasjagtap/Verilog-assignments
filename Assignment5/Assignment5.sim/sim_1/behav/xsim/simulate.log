@@ -1,0 +1,36 @@
+Time resolution is 1 ps
+Simulation Finished !!
+Time =                    0 | in_0 = 0 | in_1 = 0 | in_2 = 0 |in_3 = 0 | sel = 00 | mux_out = 0
+Time =                   10 | in_0 = 0 | in_1 = 1 | in_2 = 1 |in_3 = 1 | sel = 01 | mux_out = 1
+Time =                   20 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 01 | mux_out = 1
+Time =                   30 | in_0 = 1 | in_1 = 1 | in_2 = 0 |in_3 = 1 | sel = 10 | mux_out = 0
+Time =                   40 | in_0 = 1 | in_1 = 0 | in_2 = 1 |in_3 = 0 | sel = 10 | mux_out = 1
+Time =                   50 | in_0 = 1 | in_1 = 0 | in_2 = 1 |in_3 = 1 | sel = 00 | mux_out = 1
+Time =                   60 | in_0 = 0 | in_1 = 1 | in_2 = 0 |in_3 = 0 | sel = 00 | mux_out = 0
+Time =                   70 | in_0 = 0 | in_1 = 1 | in_2 = 0 |in_3 = 1 | sel = 10 | mux_out = 0
+Time =                   80 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 01 | mux_out = 1
+Time =                   90 | in_0 = 0 | in_1 = 0 | in_2 = 0 |in_3 = 1 | sel = 10 | mux_out = 0
+Time =                  100 | in_0 = 0 | in_1 = 1 | in_2 = 1 |in_3 = 1 | sel = 00 | mux_out = 0
+Time =                  110 | in_0 = 1 | in_1 = 1 | in_2 = 0 |in_3 = 0 | sel = 11 | mux_out = 0
+Time =                  120 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 10 | mux_out = 1
+Time =                  130 | in_0 = 0 | in_1 = 0 | in_2 = 0 |in_3 = 0 | sel = 01 | mux_out = 0
+Time =                  140 | in_0 = 1 | in_1 = 0 | in_2 = 0 |in_3 = 1 | sel = 10 | mux_out = 0
+Time =                  150 | in_0 = 1 | in_1 = 0 | in_2 = 0 |in_3 = 0 | sel = 00 | mux_out = 1
+Time =                  160 | in_0 = 0 | in_1 = 0 | in_2 = 1 |in_3 = 1 | sel = 11 | mux_out = 1
+Time =                  170 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 10 | mux_out = 1
+Time =                  180 | in_0 = 0 | in_1 = 1 | in_2 = 1 |in_3 = 1 | sel = 11 | mux_out = 1
+Time =                  190 | in_0 = 0 | in_1 = 0 | in_2 = 1 |in_3 = 1 | sel = 01 | mux_out = 0
+Time =                  200 | in_0 = 0 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 11 | mux_out = 0
+Time =                  210 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 01 | mux_out = 1
+Time =                  220 | in_0 = 1 | in_1 = 1 | in_2 = 0 |in_3 = 0 | sel = 01 | mux_out = 1
+Time =                  230 | in_0 = 0 | in_1 = 0 | in_2 = 1 |in_3 = 1 | sel = 10 | mux_out = 1
+Time =                  240 | in_0 = 0 | in_1 = 0 | in_2 = 1 |in_3 = 1 | sel = 00 | mux_out = 0
+Time =                  250 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 01 | mux_out = 1
+Time =                  260 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 00 | mux_out = 1
+Time =                  270 | in_0 = 0 | in_1 = 0 | in_2 = 0 |in_3 = 0 | sel = 11 | mux_out = 0
+Time =                  280 | in_0 = 0 | in_1 = 0 | in_2 = 1 |in_3 = 1 | sel = 10 | mux_out = 1
+Time =                  290 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 01 | mux_out = 1
+Time =                  300 | in_0 = 1 | in_1 = 1 | in_2 = 0 |in_3 = 0 | sel = 10 | mux_out = 0
+Time =                  310 | in_0 = 1 | in_1 = 1 | in_2 = 0 |in_3 = 1 | sel = 10 | mux_out = 0
+Time =                  320 | in_0 = 1 | in_1 = 1 | in_2 = 1 |in_3 = 0 | sel = 10 | mux_out = 1
+$finish called at time : 330 ns : File "/home/ramdas/Vidyaleap/Assignment5/Assignment5.srcs/sim_1/new/tb_mux_4x1.v" Line 40

@@ -1,0 +1,3 @@
+tb_arst <= 1 | tb_alarm - 0 
+tb_arst <= 0 | tb_alarm - 0 
+tb_arst <= 0 | tb_alarm - 1 

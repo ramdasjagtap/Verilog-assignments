@@ -1,0 +1,34 @@
+Time resolution is 1 ps
+tb_byte - xx 
+tb_byte - 24 
+tb_byte - 81 
+tb_byte - 09 
+tb_byte - 63 
+tb_byte - 0d 
+tb_byte - 8d 
+tb_byte - 65 
+tb_byte - 12 
+tb_byte - 01 
+tb_byte - 0d 
+tb_byte - 76 
+tb_byte - 3d 
+tb_byte - ed 
+tb_byte - 8c 
+tb_byte - f9 
+tb_byte - c6 
+tb_byte - c5 
+tb_byte - aa 
+tb_byte - e5 
+tb_byte - 77 
+tb_byte - 12 
+tb_byte - 8f 
+tb_byte - f2 
+tb_byte - ce 
+tb_byte - e8 
+tb_byte - c5 
+tb_byte - 5c 
+tb_byte - bd 
+tb_byte - 2d 
+tb_byte - 65 
+tb_byte - 63 
+$finish called at time : 660 ns : File "/home/ramdas/Vidyaleap/Assignment9/Assignment9.srcs/sim_1/new/tb_countOnes.v" Line 34
