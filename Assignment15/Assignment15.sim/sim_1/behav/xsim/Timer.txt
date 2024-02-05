@@ -1,0 +1,2 @@
+Time -                    0 |tb_arst - 1 | tb_alarm - 0 
+Time -                   10 |tb_arst - 0 | tb_alarm - 0 

@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+T=                   0 |a_in=0 |b_in=0 |and_out=0 |or_out=0 |xor_out=0 | anot_out=1 |bnot_out=1 |xnor_out=1 | nand_out=1 |nor_out=1
+T=               10000 |a_in=0 |b_in=1 |and_out=0 |or_out=1 |xor_out=1 | anot_out=1 |bnot_out=0 |xnor_out=0 | nand_out=1 |nor_out=0
+T=               20000 |a_in=1 |b_in=0 |and_out=0 |or_out=1 |xor_out=1 | anot_out=0 |bnot_out=1 |xnor_out=0 | nand_out=1 |nor_out=0
+T=               30000 |a_in=1 |b_in=1 |and_out=1 |or_out=1 |xor_out=0 | anot_out=0 |bnot_out=0 |xnor_out=1 | nand_out=0 |nor_out=0
+$finish called at time : 40 ns : File "/home/ramdas/Vidyaleap/Assignment1/Assignment1.srcs/sim_1/new/tb_basic_gates.v" Line 33

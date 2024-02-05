@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+WARNING: File descriptor (-20000) passed to $fdisplay is not valid. Please compile the design with -debug for source location information.
+$finish called at time : 220 ns : File "/home/ramdas/Vidyaleap/Assignment13/Assignment13.srcs/sim_1/new/tb_bcd_up_counter.v" Line 38

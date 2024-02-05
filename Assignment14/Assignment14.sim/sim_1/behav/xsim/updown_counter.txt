@@ -1,0 +1,3 @@
+tb_rst - 1 | tb_mode - 0 | tb_count -  x
+tb_rst - 0 | tb_mode - 0 | tb_count -  0
+tb_rst - 0 | tb_mode - 1 | tb_count -  0

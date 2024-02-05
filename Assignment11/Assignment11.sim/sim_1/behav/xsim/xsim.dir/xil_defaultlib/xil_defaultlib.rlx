@@ -1,0 +1,17 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_PIPO.v,1706692738,verilog,,,,tb_PIPO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_PISO.v,1706700041,verilog,,,,tb_PISO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_SIPO.v,1706760295,verilog,,,,tb_SIPO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/PIPO.v,1706692712,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_PIPO.v,,PIPO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/PIPO_d.v,1706692669,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/d_ff.v,,PIPO_d,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/PISO.v,1706699742,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_PISO.v,,PISO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/PISO_d.v,1706701747,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/d_ff.v,,PISO_d,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/SIPO.v,1706688204,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_SIPO.v,,SIPO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/SIPO_d.v,1706693369,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/d_ff.v,,SIPO_d,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/SIPO_extrawork.v,1706772099,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_SIPO.v,,SIPO_extrawork,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/d_ff.v,1706692503,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/mux_2x1.v,,d_ff,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sources_1/new/mux_2x1.v,1706693613,verilog,,/home/ramdas/Vidyaleap/Assignment11/Assignment11.srcs/sim_1/new/tb_PISO.v,,mux_2x1,,,,,,,,
