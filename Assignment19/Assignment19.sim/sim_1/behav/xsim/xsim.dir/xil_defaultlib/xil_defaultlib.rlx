@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sim_1/new/tb_short_timer.v,1707367715,verilog,,,,tb_short_timer,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sim_1/new/tb_timepass.v,1707378255,verilog,,,,tb_timepass,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sim_1/new/tb_traffic_system.v,1707379722,verilog,,,,tb_traffic_system,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sources_1/new/long_timer.v,1707378698,verilog,,/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sources_1/new/short_timer.v,,long_timer,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sources_1/new/short_timer.v,1707377795,verilog,,/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sources_1/new/traffic_system.v,,short_timer,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sources_1/new/timepass.v,1707377830,verilog,,/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sim_1/new/tb_timepass.v,,timepass,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sources_1/new/traffic_system.v,1707378907,verilog,,/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sim_1/new/tb_traffic_system.v,,traffic_system,,,,,,,,

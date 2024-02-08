@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Homework.srcs/sources_1/new/d_ff.v" \
+"../../../../Homework.srcs/sources_1/new/freq_divider.v" \
+"../../../../Homework.srcs/sim_1/new/tb_freq_divider.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
