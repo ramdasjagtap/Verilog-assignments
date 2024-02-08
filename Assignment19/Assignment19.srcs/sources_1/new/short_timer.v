@@ -17,20 +17,11 @@ module short_timer(
          end
        else
         begin
-         /*if(TS_start)
-           begin
-             count <= count + 1;
-           end
-         else
-           begin
-             count <= 0;
-           end 
-           */
-          /*  if(TS_start)
+        if(TS_start)
            begin
              count <= 0;
            end
-         else */
+         else 
            begin
              count <= count + 1;
            end 
