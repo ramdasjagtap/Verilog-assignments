@@ -18,11 +18,11 @@ module long_timer(
         end
       else
         begin
-         /* if(TL_start)
+         if(TL_start)
             begin
               count <= 0;
             end
-          else */
+          else 
             begin
               count <= count + 1;
             end
