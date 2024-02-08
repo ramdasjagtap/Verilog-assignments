@@ -106,14 +106,26 @@ module traffic_system(
        S0: begin
            if(!(TL && C))
              begin
-               HG = 1;
-               FR = 1;
+              // HG = 1;
+               //FR = 1;
+               HG <= 1'b1;
+               HY <= 1'b0;
+               HR <= 1'b0;
+               FR <= 1'b1;
+               FG <= 1'b0;
+               FY <= 1'b0;
                ST = 0;
              end
            else if(TL && C)
             begin
-              HY = 1;
-              FR = 1;
+             // HY = 1;
+             // FR = 1;
+               HG <= 1'b0;
+               HY <= 1'b1;
+               HR <= 1'b0;
+               FR <= 1'b1;
+               FG <= 1'b0;
+               FY <= 1'b0;
               ST = 1;
             end
        end
@@ -121,15 +133,23 @@ module traffic_system(
        S1: begin
             if(!TS)
               begin
-                HY = 1;
-                FR = 1;
+               HG <= 1'b0;
+               HY <= 1'b1;
+               HR <= 1'b0;
+               FR <= 1'b1;
+               FG <= 1'b0;
+               FY <= 1'b0;
                 ST = 0;
                // nxt_state = S1;
               end
            else if(TS)
              begin
-               HR = 1;
-               FG = 1;
+                HG <= 1'b0;
+               HY <= 1'b0;
+               HR <= 1'b1;
+               FR <= 1'b0;
+               FG <= 1'b1;
+               FY <= 1'b0;
                ST = 0;
                //nxt_state = S2;
              end
@@ -138,15 +158,23 @@ module traffic_system(
        S2: begin
              if(!TS)
               begin
-                HR = 1;
-                FG = 1;
+                HG <= 1'b0;
+               HY <= 1'b0;
+               HR <= 1'b1;
+               FR <= 1'b0;
+               FG <= 1'b1;
+               FY <= 1'b0;
                 ST = 0;
                  //nxt_state = S2;
               end
             else if(TS)
               begin
-                HR = 1;
-                FY = 1;
+               HG <= 1'b0;
+               HY <= 1'b0;
+               HR <= 1'b1;
+               FR <= 1'b0;
+               FG <= 1'b0;
+               FY <= 1'b1;
                 ST = 0;
                  //nxt_state = S3;
               end
@@ -155,15 +183,23 @@ module traffic_system(
        S3: begin
            if(!TS)
              begin
-                HR = 1;
-                FY = 1;
+               HG <= 1'b0;
+               HY <= 1'b0;
+               HR <= 1'b1;
+               FR <= 1'b0;
+               FG <= 1'b0;
+               FY <= 1'b1;
                 ST = 0;
                //nxt_state = S3;
              end
            else if(TS)
              begin
-               HG = 1;
-               FR = 1;
+              HG <= 1'b1;
+               HY <= 1'b0;
+               HR <= 1'b0;
+               FR <= 1'b1;
+               FG <= 1'b0;
+               FY <= 1'b0;
                ST = 1;
               // nxt_state = S0;
              end
