@@ -6,5 +6,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ramdas/Vidyaleap/Assignment19
 INFO: [VRFC 10-311] analyzing module traffic_system
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ramdas/Vidyaleap/Assignment19/Assignment19.srcs/sim_1/new/tb_traffic_system.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_traffic_system
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ramdas/Vidyaleap/Assignment19/Assignment19.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
