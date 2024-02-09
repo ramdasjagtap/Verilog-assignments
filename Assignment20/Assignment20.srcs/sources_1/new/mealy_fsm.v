@@ -4,9 +4,11 @@
 // overlapping
 module mealy_fsm(
  input clk,
- input arst,
- input seq_i,
- output reg det_o
+ input rst_n,
+ input d_in,
+ input status,
+ output reg q_out,
+ output  clr
     );
     
     // states declaration
@@ -21,12 +23,12 @@ module mealy_fsm(
    reg [2:0] nxt_state;
    
    // state transition
-   always @(posedge clk or posedge arst)
+   always @(posedge clk)
      begin
-       if(arst)
+       if(rst_n)
          begin
            state <= A;
-           det_o <= 0;
+           q_out <= 0;
          end  
        else
          begin
@@ -34,11 +36,12 @@ module mealy_fsm(
          end
      end
      
+     // next state logic
      always @(*)
       begin
         case(state)
         A: begin
-           if(seq_i)
+           if(d_in)
              begin
                nxt_state = B;
              end
@@ -49,7 +52,7 @@ module mealy_fsm(
         end
         
         B: begin
-           if(seq_i)
+           if(d_in)
             begin
               nxt_state = B;
             end
@@ -60,7 +63,7 @@ module mealy_fsm(
         end
         
         C: begin
-           if(seq_i)
+           if(d_in)
             begin
               nxt_state = D;
             end
@@ -71,7 +74,7 @@ module mealy_fsm(
         end
         
         D: begin
-           if(seq_i)
+           if(d_in)
             begin
               nxt_state = B;
             end
@@ -82,7 +85,7 @@ module mealy_fsm(
         end
         
         E: begin
-           if(seq_i)
+           if(d_in)
             begin
               nxt_state = D;
             end
@@ -93,4 +96,70 @@ module mealy_fsm(
         end
         endcase
       end
+      
+      
+      // output 
+      always @(*)
+      begin
+        case(state)
+        A: begin
+           if(d_in)
+             begin
+               q_out = 0;
+             end
+           else
+             begin
+               q_out = 0;
+             end
+        end
+        
+        B: begin
+           if(d_in)
+            begin
+               q_out = 0;
+            end
+           else
+             begin
+                q_out = 0;
+             end
+        end
+        
+        C: begin
+           if(d_in)
+            begin
+               q_out = 0;
+            end
+           else
+             begin
+                q_out = 0;
+             end
+        end
+        
+        D: begin
+           if(d_in)
+            begin
+               q_out = 0;
+            end
+           else
+             begin
+                q_out = 0;
+             end
+        end
+        
+        E: begin
+           if(d_in)
+            begin
+               q_out = 1;
+            end
+           else
+             begin
+               q_out = 0;
+             end
+        end
+        endcase
+      end
+
+      // clr signal logic 
+      assign clr = (status == 1);
+
 endmodule

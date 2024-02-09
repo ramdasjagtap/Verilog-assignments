@@ -17,7 +17,7 @@ module short_timer(
          end
        else
         begin
-        if(TS_start)
+          if(TS_start)
            begin
              count <= 0;
            end
