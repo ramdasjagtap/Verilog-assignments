@@ -8,8 +8,8 @@ module improvised_memory(
  input clk,
  input arst,
  input enable,
- input [31:0]address_x,  // horizontal 
- input [63:0]address_y,  // vertical
+ input [3:0]address_x,  // horizontal 
+ input [6:0]address_y,  // vertical
  input ReadWrite,
  input [7:0]data_in,
  output reg [7:0]data_out
