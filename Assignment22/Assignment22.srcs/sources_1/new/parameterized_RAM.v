@@ -2,7 +2,7 @@
 
 // parameterized RAM.
 module parameterized_RAM
-#(parameter ADDR_WIDTH = 4,
+#(parameter ADDR_WIDTH = 5,
   parameter RAM_WIDTH = 8,
   parameter RAM_DEPTH = 16)(
  input clk,

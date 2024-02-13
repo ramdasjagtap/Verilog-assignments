@@ -5,12 +5,12 @@ Running: /home/ramdas/Vivado/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'address' [/home/ramdas/Vidyaleap/Assignment22/Assignment22.srcs/sim_1/new/tb_RAM16x8.v:25]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'address' [/home/ramdas/Vidyaleap/Assignment22/Assignment22.srcs/sim_1/new/tb_RAM16x8.v:24]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.parameterized_RAM
+Compiling module xil_defaultlib.RAM16x8
 Compiling module xil_defaultlib.tb_RAM16x8
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_RAM16x8_behav
