@@ -3,8 +3,8 @@
 Oct 13 2023
 20:21:30
 /home/ramdas/Vidyaleap/Assignment23/Assignment23.sim/sim_1/behav/xsim/glbl.v,1707799939,verilog,,,,glbl,,,,,,,,
-/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_parameterizedRAM.v,1707800701,verilog,,,,tb_parameterizedRAM,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_parameterizedRAM.v,1707821247,verilog,,,,tb_parameterizedRAM,,,,,,,,
 /home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_simpledualportRAM.v,1707762340,verilog,,,,tb_simpledualportRAM,,,,,,,,
 /home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sources_1/new/parameterizedRAM.v,1707762247,verilog,,/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_simpledualportRAM.v,,parameterizedRAM,,,,,,,,
 /home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sources_1/new/simpledualportRAM.v,1707762061,verilog,,/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_simpledualportRAM.v,,simpledualportRAM,,,,,,,,
-/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sources_1/new/truedualportRAM.v,1707800655,verilog,,/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_parameterizedRAM.v,,truedualportRAM,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sources_1/new/truedualportRAM.v,1707802046,verilog,,/home/ramdas/Vidyaleap/Assignment23/Assignment23.srcs/sim_1/new/tb_parameterizedRAM.v,,truedualportRAM,,,,,,,,
