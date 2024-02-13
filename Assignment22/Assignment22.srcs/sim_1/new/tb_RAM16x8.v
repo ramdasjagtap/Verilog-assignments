@@ -3,7 +3,7 @@
 // test cases
 module tb_RAM16x8();
  // parameters
-  parameter ADDR_WIDTH = 4;
+  parameter ADDR_WIDTH = 5;
   parameter RAM_WIDTH = 8;
   parameter RAM_DEPTH = 16;
   
@@ -14,15 +14,15 @@ reg tb_cs;
 reg tb_enable;
 reg tb_out_en;
 reg tb_ReadWrite;
-reg [4:0]tb_address;
-reg [7:0]tb_data;
-wire [7:0]data;
+reg [ADDR_WIDTH-1:0]tb_address;
+reg [RAM_WIDTH-1:0]tb_data;
+wire [RAM_WIDTH-1:0]data;
 
 integer i;
 
 // module instance
-//RAM16x8 DUT(.clk(tb_clk),.arst(tb_arst),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
-parameterized_RAM #(ADDR_WIDTH,RAM_WIDTH,RAM_DEPTH) DUT(.clk(tb_clk),.arst(tb_arst),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
+RAM16x8 DUT(.clk(tb_clk),.arst(tb_arst),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
+//parameterized_RAM #(ADDR_WIDTH,RAM_WIDTH,RAM_DEPTH) DUT(.clk(tb_clk),.arst(tb_arst),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
 
 // clock
 always #5 tb_clk = ~tb_clk;

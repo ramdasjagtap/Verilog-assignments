@@ -2,14 +2,16 @@
 2020.2
 Oct 13 2023
 20:21:30
-/home/ramdas/Vidyaleap/Homework/Homework.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Homework/Homework.sim/sim_1/behav/xsim/glbl.v,1707382998,verilog,,,,glbl,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_counter.v,1707247952,verilog,,,,tb_counter,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_d_ff.v,1707324380,verilog,,,,tb_d_ff,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_freq_divider.v,1707324961,verilog,,,,tb_freq_divider,,,,,,,,
+/home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_moore_machine.v,1707713786,verilog,,,,tb_moore_machine,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_sequence_detector.v,1707247049,verilog,,,,tb_sequence_detector,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/counter.v,1707248046,verilog,,/home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_counter.v,,counter,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/d_ff.v,1707322241,verilog,,/home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/freq_divider.v,,d_ff,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/freq_divider.v,1707325249,verilog,,/home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_freq_divider.v,,freq_divider,,,,,,,,
+/home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/moore_machine.v,1707713963,verilog,,/home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_moore_machine.v,,moore_machine,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/moore_seq_detect.v,1707247021,verilog,,/home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_sequence_detector.v,,moore_seq_detect,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/sequence_detector.v,1707243583,verilog,,/home/ramdas/Vidyaleap/Homework/Homework.srcs/sim_1/new/tb_sequence_detector.v,,sequence_detector,,,,,,,,
 /home/ramdas/Vidyaleap/Homework/Homework.srcs/sources_1/new/tb_timer.v,1707323940,verilog,,,,tb_timer,,,,,,,,

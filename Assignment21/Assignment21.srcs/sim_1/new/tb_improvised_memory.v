@@ -6,8 +6,8 @@ module tb_improvised_memory();
 reg tb_clk;
 reg tb_arst;
 reg tb_enable;
-reg [31:0]tb_address_x;  //horizontal.
-reg [63:0]tb_address_y;
+reg [3:0]tb_address_x;  //horizontal.
+reg [6:0]tb_address_y;
 reg tb_ReadWrite;
 reg [7:0]tb_data_in;
 wire [7:0]tb_data_out;
@@ -38,11 +38,12 @@ initial
  tb_enable <= 1'b1;
  #5
  //Writing data
- tb_data_in <= 8'hAA;
+ //tb_data_in <= 8'hAA;
  for(i=0;i<64;i=i+1)
    begin
      tb_address_x <= $urandom_range(0,31);
      tb_address_y <= $urandom_range(0,63);
+     tb_data_in <= $urandom_range(0,8'hFF);
      @(negedge tb_clk);
      @(negedge tb_clk);
    end
@@ -52,9 +53,10 @@ initial
    tb_ReadWrite <= 1'b1;
     for(i=0;i<64;i=i+1)
      begin
+     @(negedge tb_clk);
+     @(negedge tb_clk);
      tb_address_x <= $urandom_range(0,31);
      tb_address_y <= $urandom_range(0,63);
-     @(negedge tb_clk);
      @(negedge tb_clk);
    end
    #100;
