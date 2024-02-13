@@ -3,7 +3,6 @@
 // Single Port RAM (16x8)
 module RAM16x8(
  input clk,
- input arst,
  input cs,
  input enable,
  input out_en,
@@ -19,15 +18,6 @@ module RAM16x8(
     reg [7:0]temp;
     //memory logic.
     always @(posedge clk)
-     begin
-       if(arst)
-         begin
-           for(i=0;i<16;i=i+1)
-             begin
-               RAM[i] <= 0;
-             end
-         end
-       else
          begin
            if(cs)
              begin  // Data writing
@@ -35,13 +25,16 @@ module RAM16x8(
                  begin
                    RAM[address] <= data;
                  end
-              else if(enable && ReadWrite)  // Data Reading
+         end
+     end
+       
+     always @(posedge clk)
+         begin
+             if(enable && ReadWrite)  // Data Reading
                  begin
                    temp <= RAM[address];
                  end
-             end
          end
-     end
      // Data Reading
      assign data = (cs && out_en && ReadWrite)?temp:'hzz;
      
