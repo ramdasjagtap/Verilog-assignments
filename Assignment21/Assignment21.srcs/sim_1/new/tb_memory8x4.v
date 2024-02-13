@@ -4,28 +4,25 @@
 module tb_memory8x4();
 
 reg tb_clk;
-reg tb_arst;
 reg tb_enable;
 reg [3:0]tb_address;
 reg tb_ReadWrite;
 reg [3:0]tb_data_in;
 wire [3:0]tb_data_out;
 
-//memory8x4 #(4,8)DUT(.clk(tb_clk),.arst(tb_arst),.enable(tb_enable),.address(tb_address),.ReadWrite(tb_ReadWrite),.data_in(tb_data_in),.data_out(tb_data_out));
-parameterized_memory #(4,8)DUT(.clk(tb_clk),.arst(tb_arst),.enable(tb_enable),.address(tb_address),.ReadWrite(tb_ReadWrite),.data_in(tb_data_in),.data_out(tb_data_out));
+//memory8x4 #(4,8)DUT(.clk(tb_clk),.enable(tb_enable),.address(tb_address),.ReadWrite(tb_ReadWrite),.data_in(tb_data_in),.data_out(tb_data_out));
+parameterized_memory #(4,8)DUT(.clk(tb_clk),.enable(tb_enable),.address(tb_address),.ReadWrite(tb_ReadWrite),.data_in(tb_data_in),.data_out(tb_data_out));
 
 always #5 tb_clk = ~tb_clk;
 
 initial
  begin
-  tb_arst <= 1'b1;
   tb_clk <= 1'b0;
   tb_enable <= 1'b0;
   tb_address <= 0;
   tb_ReadWrite <= 1'b0;
   tb_data_in <= 4'h0;
   #10;   // writting data in memory.
-  tb_arst <= 1'b0;
   tb_address <= 'h0;
   tb_enable <= 1'b1;
   tb_data_in <= 4'h1;

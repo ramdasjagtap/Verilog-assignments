@@ -4,7 +4,6 @@
 module tb_improvised_memory();
 
 reg tb_clk;
-reg tb_arst;
 reg tb_enable;
 reg [3:0]tb_address_x;  //horizontal.
 reg [6:0]tb_address_y;
@@ -16,7 +15,7 @@ wire [7:0]tb_data_out;
 integer i;
 
 // module instance
-improvised_memory DUT(.clk(tb_clk),.arst(tb_arst),.enable(tb_enable),.address_x(tb_address_x),.address_y(tb_address_y),.ReadWrite(tb_ReadWrite),.data_in(tb_data_in),.data_out(tb_data_out));
+improvised_memory DUT(.clk(tb_clk),.enable(tb_enable),.address_x(tb_address_x),.address_y(tb_address_y),.ReadWrite(tb_ReadWrite),.data_in(tb_data_in),.data_out(tb_data_out));
 
 // clock
 always #5 tb_clk = ~tb_clk;
@@ -25,15 +24,12 @@ always #5 tb_clk = ~tb_clk;
 // stimulus.
 initial
  begin 
- tb_arst <= 1'b1;
  tb_clk <= 1'b0;
  tb_enable <= 1'b0;
  tb_address_x <= 0;
  tb_address_y <= 0;
  tb_ReadWrite <= 1'b0;
  tb_data_in <= 0;
- #10;
- tb_arst <= 1'b0;
  #10;
  tb_enable <= 1'b1;
  #5

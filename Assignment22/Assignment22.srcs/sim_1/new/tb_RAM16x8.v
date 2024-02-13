@@ -9,7 +9,6 @@ module tb_RAM16x8();
   
   // wires and regs
 reg tb_clk;
-reg tb_arst;
 reg tb_cs;
 reg tb_enable;
 reg tb_out_en;
@@ -21,8 +20,8 @@ wire [RAM_WIDTH-1:0]data;
 integer i;
 
 // module instance
-RAM16x8 DUT(.clk(tb_clk),.arst(tb_arst),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
-//parameterized_RAM #(ADDR_WIDTH,RAM_WIDTH,RAM_DEPTH) DUT(.clk(tb_clk),.arst(tb_arst),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
+RAM16x8 DUT(.clk(tb_clk),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
+//parameterized_RAM #(ADDR_WIDTH,RAM_WIDTH,RAM_DEPTH) DUT(.clk(tb_clk),.cs(tb_cs),.enable(tb_enable),.out_en(tb_out_en),.ReadWrite(tb_ReadWrite),.address(tb_address),.data(data));
 
 // clock
 always #5 tb_clk = ~tb_clk;
@@ -33,7 +32,6 @@ assign data = (!tb_out_en)?tb_data:'hzz;
 // stimulus
 initial
  begin
-  tb_arst <= 1'b1;
   tb_clk <= 1'b0;
   tb_cs <= 1'b0;
   tb_enable <= 1'b0;
@@ -42,7 +40,6 @@ initial
   tb_ReadWrite <= 0;
   tb_out_en <= 1'b0;
    #10;
-   tb_arst <= 1'b0;
    tb_cs <= 1'b1;
    tb_enable <= 1'b1;
    tb_address <= 'h0000;
