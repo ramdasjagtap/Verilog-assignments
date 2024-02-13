@@ -3,35 +3,35 @@
 module parameterized_memory
 #(parameter WIDTH=4,
 parameter DEPTH=8)(
-	input clk,arst,
+	input clk,
 	input enable,
 	input [WIDTH-1:0]address,
 	input ReadWrite,
 	input [WIDTH-1:0]data_in,
-	output reg [WIDTH-1:0] data_out
+	output  [WIDTH-1:0] data_out
 );
 
   // memory 8x4 
   reg [WIDTH-1:0]mem[0:DEPTH-1];
+  reg [WIDTH-1:0]temp;
   integer i;
+  
   // memory reading and writing logic.
   always @(posedge clk)
-		begin 
-			if(arst)
-			  begin
-			   for(i=0;i<8;i=i+1)
-			     begin
-			       mem[i] <= 0;
-			     end
-			  end
-		   else  if(enable && !ReadWrite)  // RW = 0 -> writing data in memory
+	begin
+	       if(enable && !ReadWrite)  // RW = 0 -> writing data in memory
 			begin
 				mem[address] <= data_in;
 			end
-			else if(enable && ReadWrite)  // RW = 1 -> reading data from memory
-			begin
-				data_out <= mem[address];
-			end
 		end
 		
+		always @(posedge clk)
+		  begin
+		    if(enable && ReadWrite)  // RW = 1 -> reading data from memory
+			begin
+				temp <= mem[address];
+			end
+		  end
+		  
+		  assign data_out = (enable && ReadWrite)?temp:'hzz;
 endmodule

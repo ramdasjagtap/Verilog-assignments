@@ -7,8 +7,7 @@
 module truedualportRAM #(parameter WIDTH= 8,
 parameter DEPTH = 32,
 parameter ADDR_W = 6)(
- input clk_0,clk_1,
- input clr_0,clr_1,
+ input clk,
  input en_0,en_1,
  input out_en_0,out_en_1,
  input ReadWrite_0,ReadWrite_1,
@@ -24,58 +23,35 @@ parameter ADDR_W = 6)(
   reg [WIDTH-1:0]temp1;
   
   // Port -> 0
-  always @(posedge clk_0)
+  // memory write (
+  always @(posedge clk)
     begin
-       if(clr_0)
-        begin
-          for(i=0;i<32;i=i+1)
-           begin
-               RAM[i] <= 0;
-           end
-        end
-     else
-        begin
-          if(en_0 && ReadWrite_0)
-            begin
-               temp0 <= RAM[address_0];
-            end
-          else if(en_0 && !ReadWrite_1)
-              begin
-                 RAM[address_0] <= data_0;
-              end
-         else if(!en_1)
-             begin
-                temp0 <= 'hzz;
-             end
-        end
+         if(en_0 && !ReadWrite_0)
+            RAM[address_0] <= data_0;
     end
+    
+    // memory Read
+   always @(posedge clk)
+    begin
+         if(en_0 && ReadWrite_0)
+           temp0 <= RAM[address_0];
+    end
+    
  assign data_0 = (en_0 && ReadWrite_0 && out_en_0)?temp0:'hzz;
  
-    // Port -> 1
-    always @(posedge clk_1)
+  // Port -> 1
+  // memory write 
+  always @(posedge clk)
     begin
-       if(clr_1)
-        begin
-          for(i=0;i<32;i=i+1)
-           begin
-               RAM[i] <= 0;
-           end
-        end
-     else
-        begin
-          if(en_1 && ReadWrite_1)
-            begin
-               temp1 <= RAM[address_1];
-            end
-          else if(en_0 && !ReadWrite_1)
-              begin
-                 RAM[address_1] <= data_1;
-              end
-          else if(!en_1)
-             begin
-                temp1 <= 'hzz;
-             end
-        end
+         if(en_1 && !ReadWrite_1)
+            RAM[address_1] <= data_1;
+    end
+    
+    // memory Read.
+   always @(posedge clk)
+    begin
+         if(en_1 && ReadWrite_1)
+           temp1 <= RAM[address_1];
     end
     
  assign data_1 = (en_1 && ReadWrite_1 && out_en_1)?temp1:'hzz;
