@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/Assignment24/Assignment24.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sim_1/new/tb_FIFO16x8.v,1707809269,verilog,,,,tb_FIFO16x8,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sim_1/new/tb_improvisedFIFO.v,1707846419,verilog,,,,tb_improvisedFIFO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sources_1/new/FIFO16x8.v,1707809078,verilog,,/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sim_1/new/tb_FIFO16x8.v,,FIFO16x8,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sources_1/new/improvisedFIFO.v,1707846141,verilog,,/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sources_1/new/truedualportRAM.v,,improvisedFIFO,,,,,,,,
+/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sources_1/new/truedualportRAM.v,1707811510,verilog,,/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sim_1/new/tb_improvisedFIFO.v,,truedualportRAM,,,,,,,,
