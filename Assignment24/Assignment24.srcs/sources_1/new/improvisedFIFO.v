@@ -30,8 +30,8 @@ parameter ADDR_W = 4)(
   // writing data form port - 0 
   truedualportRAM #( WIDTH,DEPTH,ADDR_W) RAM(
   .clk(clk),
-  .en_0(1'b1),
-  .en_1(1'b1),
+  .en_0(wr_en),
+  .en_1(rd_en),
   .out_en_0(1'b0),
   .out_en_1(1'b1),
   .ReadWrite_0(wr_en),  // writing of data
