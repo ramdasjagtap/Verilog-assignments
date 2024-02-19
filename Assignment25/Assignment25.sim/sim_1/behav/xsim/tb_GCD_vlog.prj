@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Assignment25.srcs/sources_1/new/COMPARE.v" \
+"../../../../Assignment25.srcs/sources_1/new/MUX_2x1.v" \
+"../../../../Assignment25.srcs/sources_1/new/PIPO.v" \
+"../../../../Assignment25.srcs/sources_1/new/SUB.v" \
+"../../../../Assignment25.srcs/sources_1/new/controllerGCD.v" \
+"../../../../Assignment25.srcs/sources_1/new/datapathGCD.v" \
+"../../../../Assignment25.srcs/sources_1/new/improvisation2.v" \
+"../../../../Assignment25.srcs/sim_1/new/tb_GCD.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

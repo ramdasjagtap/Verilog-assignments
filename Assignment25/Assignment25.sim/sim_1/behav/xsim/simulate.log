@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+Time -                    0 | tb_start - 0 | tb_data_in -     x | tb_data_out -    x
+Time -                   10 | tb_start - 1 | tb_data_in -    65 | tb_data_out -    x
+Time -                   20 | tb_start - 0 | tb_data_in -    26 | tb_data_out -    x
+Time -                   25 | tb_start - 0 | tb_data_in -    26 | tb_data_out -   39
+Time -                   35 | tb_start - 0 | tb_data_in -    26 | tb_data_out -   13
+Time -                   55 | tb_start - 0 | tb_data_in -    26 | tb_data_out -    0
+$finish called at time : 70 ns : File "/home/ramdas/Vidyaleap/Assignment25/Assignment25.srcs/sim_1/new/tb_GCD.v" Line 35

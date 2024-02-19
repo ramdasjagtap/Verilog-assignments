@@ -3,6 +3,7 @@
 // true dual port RAM
 // data can be read and write from both ports
 // both ports operates on different clocks.
+
 module truedualportRAM #(parameter WIDTH= 8,
 parameter DEPTH = 32,
 parameter ADDR_W = 6)(
@@ -10,19 +11,18 @@ parameter ADDR_W = 6)(
  input en_0,en_1,
  input out_en_0,out_en_1,
  input ReadWrite_0,ReadWrite_1,
- input [ADDR_W-1:0]address_0,address_1,
+ input [ADDR_W:0]address_0,address_1,
  inout [WIDTH-1:0]data_0,
  inout  [WIDTH-1:0]data_1
  );
  
   // RAM
   reg [WIDTH-1:0]RAM[0:DEPTH-1];
-  integer i;
   reg [WIDTH-1:0]temp0;
   reg [WIDTH-1:0]temp1;
   
   // Port -> 0
-  // memory write (
+  // memory write 
   always @(posedge clk)
     begin
          if(en_0 && !ReadWrite_0)
