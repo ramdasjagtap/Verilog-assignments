@@ -5,6 +5,7 @@ Running: /home/ramdas/Vivado/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3129] assignment to input 'data_in' [/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sources_1/new/improvisedFIFO.v:41]
+WARNING: [VRFC 10-5021] port 'cs_wr' is not connected on this instance [/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sim_1/new/tb_improvisedFIFO.v:15]
+WARNING: [VRFC 10-3129] assignment to input 'data_in' [/home/ramdas/Vidyaleap/Assignment24/Assignment24.srcs/sources_1/new/improvisedFIFO.v:43]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
