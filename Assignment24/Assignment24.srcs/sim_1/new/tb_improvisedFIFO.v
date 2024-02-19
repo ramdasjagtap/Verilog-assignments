@@ -12,7 +12,8 @@ wire tb_empty;
 wire tb_almost_full;
 wire tb_almost_empty;
 
-improvisedFIFO #(8,16,4)DUT(.clk(tb_clk),.rst(tb_rst),.wr_en(tb_wr_en),.rd_en(tb_rd_en),.data_in(tb_din),.data_out(tb_dout),.full(tb_full),.empty(tb_empty),.almost_full(tb_almost_full),.almost_empty(tb_almost_empty));
+improvisedFIFO #(8,16,4)DUT(.clk(tb_clk),.rst(tb_rst),.wr_en(tb_wr_en),.rd_en(tb_rd_en),.data_in(tb_din),.data_out(tb_dout)
+,.full(tb_full),.empty(tb_empty),.almost_full(tb_almost_full),.almost_empty(tb_almost_empty));
 
 always #5 tb_clk = ~tb_clk;
 
@@ -26,9 +27,10 @@ initial
    tb_clk <= 1'b0;
    tb_wr_en <= 1'b0;
    tb_rd_en <= 1'b0;
-   tb_din <= 0;
-   #10;
+   tb_din <= 'hAA;
+   #7;
    tb_rst <= 1'b0;
+   #7;
    tb_wr_en <= 1'b1;
    tb_rd_en <= 1'b0;
    for(i=0;i<32;i=i+1)
@@ -36,26 +38,19 @@ initial
        tb_din <= $urandom_range(0,8'hFF);
        @(negedge tb_clk);
        @(negedge tb_clk);
-       @(negedge tb_clk);
-       @(negedge tb_clk);
      end
-     #100;
+     
      tb_rst <= 1'b0;
-     tb_wr_en <= 1'b0;
+     tb_wr_en <= 1'b1;
      tb_rd_en <= 1'b1;
      for(i=0;i<32;i=i+1)
       begin
        tb_din <= $urandom_range(0,8'hFF);
        @(negedge tb_clk);
        @(negedge tb_clk);
-       @(negedge tb_clk);
-       @(negedge tb_clk);
-       @(negedge tb_clk);
-       @(negedge tb_clk);
-       @(negedge tb_clk);
-       @(negedge tb_clk);
      end
-     #100;
+     #50;
+   
      $fclose(file);
      $fdisplay(file,"Simulation Over!!");
      $finish();
