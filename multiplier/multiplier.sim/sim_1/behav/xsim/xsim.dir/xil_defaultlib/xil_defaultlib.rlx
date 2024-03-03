@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/ramdas/Vidyaleap/multiplier/multiplier.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sim_1/new/tb_multiplier.v,1708368519,verilog,,,,tb_multiplier,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sim_1/new/tb_test.v,1708359158,verilog,,,,tb_test,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/PIPO.v,1708358929,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/adder.v,,PIPO,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/adder.v,1708372598,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/controller.v,,adder,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/complement.v,1708356584,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/controller.v,,complement,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/controller.v,1708373034,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/d_ff.v,,controller,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/counter.v,1708365987,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/d_ff.v,,counter,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/d_ff.v,1708372777,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/datapath.v,,d_ff,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/datapath.v,1708365961,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/multiplier.v,,datapath,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/multiplier.v,1708367965,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/mux_2x1.v,,multiplier,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/mux_2x1.v,1708362650,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/reg_5b.v,,mux_2x1,,,,,,,,
+,,,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/shreg_5b.v,,reg_5b,,,,,,,,
+/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sources_1/new/right_shift.v,1708364692,verilog,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sim_1/new/tb_multiplier.v,,right_shift,,,,,,,,
+,,,,/home/ramdas/Vidyaleap/multiplier/multiplier.srcs/sim_1/new/tb_multiplier.v,,shreg_5b,,,,,,,,
