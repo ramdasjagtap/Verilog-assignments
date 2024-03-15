@@ -18,16 +18,16 @@ module mod_sel_counter(
 	  	if(!mode)
 		 begin
 			if(rst)
-				count = 4'h0;
+				count <= 4'h0;
 			else
-				count = count + 4'h1;
+				count <= count + 4'h1;
 		end
 		else
 		 begin
 			if(rst)
-				count = 4'hF;
+				count <= 4'hF;
 			else
-				count = count - 4'h1;
+				count <= count - 4'h1;
 		end
 
 	  end
