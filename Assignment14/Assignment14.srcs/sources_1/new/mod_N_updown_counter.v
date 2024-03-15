@@ -16,18 +16,18 @@ module mod_N_updown_counter
       if(mode)
         begin
           if(rst)
-            count = N;
+            count <= N;
           else if(count == 0)
-            count = N;
+            count <= N;
           else
-            count = count - 1;
+            count <= count - 1;
         end
       else
         begin
           if(rst)
-            count = 0;
+            count <= 0;
           else
-            count = count + 1;
+            count <= count + 1;
         end
      end
 endmodule
