@@ -58,7 +58,7 @@ parameter ADDR_W = 4)(
    // writing of data
    always @(posedge clk)
      begin
-        if(wr_en)
+       if(wr_en && !full)
           begin
             if(wptr == DEPTH)
               begin
@@ -74,7 +74,7 @@ parameter ADDR_W = 4)(
          // reading of data.
           always @(posedge clk)
           begin
-           if(rd_en)
+            if(rd_en && !empty)
              begin
               if(rptr == DEPTH)
                 begin
@@ -90,7 +90,7 @@ parameter ADDR_W = 4)(
           // Read with no write.
           always @(posedge clk)
             begin
-            if(rd_en && !wr_en)
+              if(rd_en && !wr_en && !empty)
              begin
                if(count != 0)
                  begin
@@ -106,7 +106,7 @@ parameter ADDR_W = 4)(
             //write with no read;
             always @(posedge clk)
               begin
-              if(wr_en && !rd_en)
+                if(wr_en && !rd_en && !full)
               begin
                 if(count != DEPTH)
                  begin
