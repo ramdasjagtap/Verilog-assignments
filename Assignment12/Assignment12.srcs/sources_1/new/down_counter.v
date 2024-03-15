@@ -11,9 +11,9 @@ module down_counter(
  always @(posedge clk)
   begin
  	if(!rst)
-		count = count - 4'h1;
+		count <= count - 4'h1;
 	else
-		count = 4'hF;
+		count <= 4'hF;
  end
  
 endmodule
