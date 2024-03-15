@@ -18,22 +18,22 @@ module counter_load(
 	  	if(!mode)
 		 begin
 			if(rst)
-				count = 4'h0;
+				count <= 4'h0;
 			else
 				begin
 				  if(count_val)
-				      count = count_val + 4'h1;
+				      count <= count_val + 4'h1;
 				end
 		end
 		else
 		 begin
 			if(rst)
-				count = 4'hF;
+				count <= 4'hF;
 			else
 				begin
 				  if(count_val)
 				    begin
-				      count = count_val - 4'h1;
+				      count <= count_val - 4'h1;
 				    end
 				end
 		end
