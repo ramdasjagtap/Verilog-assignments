@@ -36,12 +36,6 @@ module traffic_system(
       if(rst)
         begin
           state <= S0;
-          HG <= 1'b1;
-          HY <= 1'b0;
-          HR <= 1'b0;
-          FR <= 1'b1;
-          FG <= 1'b0;
-          FY <= 1'b0;
         end
       else
         begin
@@ -96,6 +90,7 @@ module traffic_system(
                nxt_state = S0;
              end
        end
+        default: nxt_state = S0;
        endcase
       end
       
@@ -106,104 +101,102 @@ module traffic_system(
        S0: begin
            if(!(TL && C))
              begin
-              // HG = 1;
-               //FR = 1;
-               HG <= 1'b1;
-               HY <= 1'b0;
-               HR <= 1'b0;
-               FR <= 1'b1;
-               FG <= 1'b0;
-               FY <= 1'b0;
-               ST = 0;
+               HG = 1'b1;
+               HY = 1'b0;
+               HR = 1'b0;
+               FR = 1'b1;
+               FG = 1'b0;
+               FY = 1'b0;
+               ST = 1'b0;
              end
            else if(TL && C)
             begin
-             // HY = 1;
-             // FR = 1;
-               HG <= 1'b0;
-               HY <= 1'b1;
-               HR <= 1'b0;
-               FR <= 1'b1;
-               FG <= 1'b0;
-               FY <= 1'b0;
-              ST = 1;
+               HG = 1'b0;
+               HY = 1'b1;
+               HR = 1'b0;
+               FR = 1'b1;
+               FG = 1'b0;
+               FY = 1'b0;
+               ST = 1'b1;
             end
        end
        
        S1: begin
             if(!TS)
               begin
-               HG <= 1'b0;
-               HY <= 1'b1;
-               HR <= 1'b0;
-               FR <= 1'b1;
-               FG <= 1'b0;
-               FY <= 1'b0;
-                ST = 0;
-               // nxt_state = S1;
+               HG = 1'b0;
+               HY = 1'b1;
+               HR = 1'b0;
+               FR = 1'b1;
+               FG = 1'b0;
+               FY = 1'b0;
+               ST = 1'b0;
               end
            else if(TS)
              begin
-                HG <= 1'b0;
-               HY <= 1'b0;
-               HR <= 1'b1;
-               FR <= 1'b0;
-               FG <= 1'b1;
-               FY <= 1'b0;
-               ST = 0;
-               //nxt_state = S2;
+               HG = 1'b0;
+               HY = 1'b0;
+               HR = 1'b1;
+               FR = 1'b0;
+               FG = 1'b1;
+               FY = 1'b0;
+               ST = 1'b0;
              end
        end
        
        S2: begin
              if(!TS)
               begin
-                HG <= 1'b0;
-               HY <= 1'b0;
-               HR <= 1'b1;
-               FR <= 1'b0;
-               FG <= 1'b1;
-               FY <= 1'b0;
-                ST = 0;
-                 //nxt_state = S2;
+               HG = 1'b0;
+               HY = 1'b0;
+               HR = 1'b1;
+               FR = 1'b0;
+               FG = 1'b1;
+               FY = 1'b0;
+               ST = 1'b0;
               end
             else if(TS)
               begin
-               HG <= 1'b0;
-               HY <= 1'b0;
-               HR <= 1'b1;
-               FR <= 1'b0;
-               FG <= 1'b0;
-               FY <= 1'b1;
-                ST = 0;
-                 //nxt_state = S3;
+               HG = 1'b0;
+               HY = 1'b0;
+               HR = 1'b1;
+               FR = 1'b0;
+               FG = 1'b0;
+               FY = 1'b1;
+               ST = 1'b0;
               end
        end
        
        S3: begin
            if(!TS)
              begin
-               HG <= 1'b0;
-               HY <= 1'b0;
-               HR <= 1'b1;
-               FR <= 1'b0;
-               FG <= 1'b0;
-               FY <= 1'b1;
-                ST = 0;
-               //nxt_state = S3;
+               HG = 1'b0;
+               HY = 1'b0;
+               HR = 1'b1;
+               FR = 1'b0;
+               FG = 1'b0;
+               FY = 1'b1;
+               ST = 1'b0;
              end
            else if(TS)
              begin
-              HG <= 1'b1;
-               HY <= 1'b0;
-               HR <= 1'b0;
-               FR <= 1'b1;
-               FG <= 1'b0;
-               FY <= 1'b0;
-               ST = 1;
-              // nxt_state = S0;
+               HG = 1'b1;
+               HY = 1'b0;
+               HR = 1'b0;
+               FR = 1'b1;
+               FG = 1'b0;
+               FY = 1'b0;
+               ST = 1'b1;
              end
        end
+        default: begin
+          HG = 1'b1;
+          HY = 1'b0;
+          HR = 1'b0;
+          FR = 1'b1;
+          FG = 1'b0;
+          FY = 1'b0;
+          end
        endcase
       end
       
