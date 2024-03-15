@@ -13,29 +13,29 @@ module mode_sel_bcd_counter(
  	if(mode)
 	 begin
 			if(rst)
-		BCD_count = 4'b0000;
+		BCD_count <= 4'b0000;
 	else
 		 begin
 			if(BCD_count == 4'b1001)
 			 begin
-				BCD_count = 4'b0000;
+				BCD_count <= 4'b0000;
 			end
 			else
 		  begin
-				BCD_count = BCD_count + 4'b0001;
+				BCD_count <= BCD_count + 4'b0001;
 			end
 		end
 	end
 	else
 	 begin
 	   	if(rst)
-			BCD_count = 4'b1001;
+			BCD_count <= 4'b1001;
 		else
 		 begin
 		        if(BCD_count == 4'b0000)
-				BCD_count = 4'b1001;
+				BCD_count <= 4'b1001;
 			else
-				BCD_count = BCD_count - 4'b0001;
+				BCD_count <= BCD_count - 4'b0001;
 		end
 	   end
 	
