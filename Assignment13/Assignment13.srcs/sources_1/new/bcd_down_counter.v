@@ -11,13 +11,13 @@ module bcd_down_counter(
   always @(posedge clk)
 	    begin
 	   	if(rst)
-			BCD_count = 4'b1001;
+			BCD_count <= 4'b1001;
 		else
 		 begin
 		    if(BCD_count == 4'b0000)
-			    BCD_count = 4'b1001;
+			    BCD_count <= 4'b1001;
 			else
-				BCD_count = BCD_count - 4'b0001;
+				BCD_count <= BCD_count - 4'b0001;
 		end
 	   end
 	
