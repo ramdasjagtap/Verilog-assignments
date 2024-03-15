@@ -12,13 +12,13 @@ module mod_N_counter
   always @(posedge clk)
    begin
     if(rst)
-      count = 0;
+      count <= 0;
     else
       begin
         if(count == N)
-          count = 0;
+          count <= 0;
         else
-          count = count + 1;
+          count <= count + 1;
       end
    end
  endmodule
